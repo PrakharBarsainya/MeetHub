@@ -8,7 +8,7 @@ The application is built using the **MERN stack concepts**, **WebRTC**, and **So
 
 ## 🔗 Project Links
 
-* **GitHub Repository:** `<your-github-repository-link>`
+* **GitHub Repository:** `https://github.com/PrakharBarsainya/MeetHub`
 * **Live Project:** `<your-live-project-link>`
 * **Backend API:** `<your-deployed-backend-url>`
 
@@ -1045,7 +1045,7 @@ After deployment, update these sections:
 
 ```text
 GitHub Repository:
-<your-github-repository-link>
+https://github.com/PrakharBarsainya/MeetHub
 
 Live Project:
 <your-live-project-link>
@@ -1120,7 +1120,7 @@ Contributions are welcome.
 To contribute:
 
 ```bash
-git clone <your-github-repository-link>
+git clone https://github.com/PrakharBarsainya/MeetHub
 ```
 
 Create a new branch:

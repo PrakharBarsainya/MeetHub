@@ -1,6 +1,6 @@
-let IS_PROD = false;
+let IS_PROD = true;
 const server = IS_PROD ?
-    "https://meethub-qime.onrender.com" :
+    "https://meethubbackend-jdft.onrender.com" :
 
     "http://localhost:8000"
 
