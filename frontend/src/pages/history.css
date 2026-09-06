@@ -1,0 +1,14 @@
+.history-navbar {
+    display:flex;
+    width:100%;
+    justify-content:start;
+    background-color: #aebbff95;
+    height: 3.5rem;
+    border-radius: 0%;
+}
+
+.home-icon {
+    background-color: none;
+    
+
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.LandingPageContainer {
+  height: 100vh;
+  background: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Navbar .container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  color: white;
+}
+
+.navheader h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container .navlink {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  align-items: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  text-align: start;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] {
+  background-color: #ff9839;
+  width: fit-content;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 75vh;
+  width: auto;
+}
