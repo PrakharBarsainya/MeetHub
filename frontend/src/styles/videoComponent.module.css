@@ -59,7 +59,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: inherit;
+  overflow: hidden;
+  direction: ltr;
 }
 
 .chatContainer h1 {
@@ -79,18 +80,32 @@
   padding: 1rem 0;
   scrollbar-width: none;
   margin: 0 1rem 3.2rem 1rem;
+
   direction: ltr;
   text-align: left;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .chattingArea {
   position: absolute;
   bottom: 0;
+  left: 0;
+
+  width: 100%;
+  box-sizing: border-box;
+
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  gap: 0.5rem;
+
   background: rgba(41, 95, 255, 0.44);
   border-radius: 0 0 10px 10px;
   backdrop-filter: blur(5px);
+
   direction: ltr;
 }
 
@@ -104,17 +119,81 @@
 }
 
 .chattingArea input {
-  direction: ltr;
-  text-align: left;
+  direction: ltr !important;
+  text-align: left !important;
 }
 
 .chattingArea textarea {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.chattingArea input::placeholder,
+.chattingArea textarea::placeholder {
   direction: ltr;
   text-align: left;
 }
 
-.conferenceView {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2rem;
+@media (max-width: 768px) {
+  .chatRoom {
+    width: 90vw;
+    height: 80vh;
+    right: 5vw;
+    margin-top: 1rem;
+    min-width: 0;
+  }
+
+  .chatContainer {
+    width: 100%;
+    direction: ltr;
+    overflow: hidden;
+  }
+
+  .chatContainer h1 {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .chattingDisplay {
+    direction: ltr !important;
+    text-align: left !important;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .chattingDisplay p {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: normal;
+  }
+
+  .chattingArea {
+    width: 100%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+    direction: ltr !important;
+  }
+
+  .chattingArea .MuiTextField-root {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .chattingArea input,
+  .chattingArea textarea {
+    direction: ltr !important;
+    text-align: left !important;
+  }
+
+  .chattingArea button {
+    flex-shrink: 0;
+  }
 }
