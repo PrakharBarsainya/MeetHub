@@ -9,8 +9,8 @@ The application is built using the **MERN stack concepts**, **WebRTC**, and **So
 ## 🔗 Project Links
 
 * **GitHub Repository:** `https://github.com/PrakharBarsainya/MeetHub`
-* **Live Project:** `<your-live-project-link>`
-* **Backend API:** `<your-deployed-backend-url>`
+* **Live Project:** `https://meethubfrontend-tzk4.onrender.com`
+* **Backend API:** `https://meethubbackend-jdft.onrender.com`
 
 > The links above can be replaced with the actual URLs after deployment.
 
@@ -677,7 +677,7 @@ The `.env` file should be included in `.gitignore`.
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-github-repository-link>
+git clone https://github.com/PrakharBarsainya/MeetHub.git
 ```
 
 Move into the project:
@@ -1048,10 +1048,10 @@ GitHub Repository:
 https://github.com/PrakharBarsainya/MeetHub
 
 Live Project:
-<your-live-project-link>
+https://meethubfrontend-tzk4.onrender.com
 
 Backend API:
-<your-deployed-backend-url>
+https://meethubbackend-jdft.onrender.com
 ```
 
 ---
